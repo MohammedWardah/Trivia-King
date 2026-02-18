@@ -1,0 +1,71 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 3em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.question {
+  padding: 1em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-bottom: 1px solid #8c8c8c;
+}
+
+.answers {
+  margin-top: 1.5em;
+  display: flex;
+  gap: 1em;
+}
+
+button {
+  cursor: pointer;
+}
+
+.question button {
+  padding: 0.5em 0.75em;
+  border-radius: 5px;
+  border: none;
+}
+
+button.correct {
+  background-color: rgb(31, 100, 31);
+}
+
+button.wrong {
+  background-color: rgb(100, 9, 9);
+}
+
+button:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.default {
+  background-color: rgb(78, 51, 215);
+}
