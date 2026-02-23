@@ -1,16 +1,16 @@
-# React + Vite
+# King of Trivia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast, modern trivia quiz app built with React. Test your knowledge across a range of categories pulled live from the Open Trivia Database.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+King of Trivia fetches 5 random multiple-choice questions from the Open Trivia Database and challenges you to answer as many as you can. Once you submit, your score is revealed alongside the correct answers — with wrong picks highlighted in red and correct ones in green.
 
-## React Compiler
+## How to Play
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. The app loads 5 trivia questions across random categories
+2. Click an answer to select it — click again to deselect
+3. The footer tracks how many questions you've answered
+4. Hit Submit when you're ready to see your score
+5. Correct answers are highlighted in green, wrong picks in red
+6. Click New Quiz to fetch a fresh set of questions and go again
